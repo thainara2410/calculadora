@@ -20,7 +20,7 @@
 
   <ion-input
   placeholder="Digite aqui o seu calculo..."
-  type="number" 
+  type="text" 
   [(ngModel)]="display"
   />
 
@@ -62,6 +62,6 @@
       <ion-row>
       <ion-col class="numeradores"><ion-button fill="clear" expand="block" (click)="click(0)">0</ion-button></ion-col>
       <ion-col class="virgula"><ion-button fill="clear" expand="block" (click)="click(',')">,</ion-button></ion-col>
-      <ion-col class="resultado"><ion-button fill="clear" expand="block" (click)="click('=')">=</ion-button></ion-col>
+      <ion-col class="resultado"><ion-button fill="clear" expand="block" (click)="calcular()">=</ion-button></ion-col>
     </ion-row>
   </ion-grid>
